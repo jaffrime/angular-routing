@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>Angular Routing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="scotcha">
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="home">Scotcha!</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a ui-sref="contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div ui-view></div>
+  </div>
+  <script src="angular/angular.min.js"> </script>
+  <script src="js/app.js"></script>
+  <script src="js/controller.js"></script>
+
+</body>
+
+</html>
